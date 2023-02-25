@@ -121,7 +121,7 @@ ard-title
 .authentication-form{
   width: 400px;
   opacity: 0.7;
-  
+  height: auto;
 }
 
 .authentication .card-title{

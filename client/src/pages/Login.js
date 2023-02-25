@@ -29,8 +29,8 @@ function Login() {
   };
 
   return (
-    <div className="authentication" style={{ backgroundImage:`url(${image})`,backgroundSize: "cover",
-    height: "100vh", }}>
+    <div style={{ backgroundImage:`url(${image})`,backgroundSize: "cover",
+    height: "100vh", display:"flex", alignItems:"center", justifyContent:"center" }}>
       <div className="authentication-form card-1 p-3">
         <h1 className="card-title">Sign in</h1>
         <Form layout="vertical" onFinish={onFinish}>
