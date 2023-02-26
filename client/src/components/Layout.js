@@ -3,6 +3,7 @@ import "../layout.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Badge } from "antd";
+import logo from '../assets/logo.jpg'
 
 function Layout({ children }) {
   const [collapsed, setCollapsed] = useState(false);
@@ -77,7 +78,9 @@ function Layout({ children }) {
       <div className="d-flex layout" style={{ backgroundColor: '#fff'}}>
         <div className="sidebar" style={{ backgroundColor: '#00796B'}}>
           <div className="sidebar-header">
-            <h1 className="logo">dd</h1>
+            <h1 className="logo">
+              <img src={logo} height={80} width={80} opacity={7} />
+            </h1>
             <h1 className="role">{role}</h1>
           </div>
 
